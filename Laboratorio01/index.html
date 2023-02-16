@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <title>TC2005B. Lab01</title>
+</head>
+<body>
+    <h1>Laboratorio 1: Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información</h1>
+        <ul>
+        <li><a class="active">Inicio</a></li>
+        <li><a href="#qa">Q&A</a></li>
+        </ul>
+    <section>
+    <h2>About Me</h2>
+    <p>
+    Me llamo Yuna Chung, soy estudiante de la uninversidad Tecnológico de Monterrey, Campus Querétaro. <br>
+    Voy en el 4to semestre, y este es el primer laboratorio de la unidad de formación TC2005B.401 - Construcción de Software
+     y Toma de Decisiones. <br>
+    Estoy apenas aprendiendo diferentes lenguajes de programación durante la carrera, entonces espero aprender 
+    </p>
+    </section>
+        <h4>Repositorio Personal del curso: </h4>
+        <button onclick="window.location.href='https://github.com/yna2131/TC2005B.401_rep.git';">CLICK ME!</button>
+
+    <section>
+    <ul>
+        <li><a href="#index">Inicio</a></li>
+        <li><a class="active">Q&A</a></li>
+    </ul>
+    </section>
+
+    <section>
+
+        <h2>Preguntas a Responder</h2>
+        <li class="question">¿Cuál es la diferencia entre Internet y la World Wide Web?</li><br>
+        <p class="answer">El internet es la red de computadoras conectadas en la que trabaja la web, así como donde los correos 
+            electrónicos y archivos viajan. Y por otro lado, la World Wide Web, o web por abreviatura, son las páginas que vemos 
+            cuando estamos utilizando un dispositivo y estamos en línea. Si el internet es los caminos que conectan los pueblos y 
+            ciudades juntos, la World Wide Web contiene las cosas que vemos en el camino como las casas y tiendas.</p>
+
+        <li class="question">¿Cuáles son las partes de una URL?</li><br>
+        <p class="answer">“URL significa Uniform Resource Locator (Localizador de Recursos Uniformes). Una URL no es más que una 
+            dirección que es dada a un recurso único en la web.” (MDN, n.d.). Las partes de un URL son el protocolo, el nombre de 
+            dominio, el puerto, la ruta al recurso en el servidor web, parámetros adicionales proporcionados al servidor web, y 
+            una ancla para otra parte del recurso en sí.</p>
+
+        <li class="question">¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</li><br>
+        <p class="answer">El propósito del método POST es crear nuevos recursos; el método HTTP GET es utilizado para leer o 
+            recuperar la representación de un recurso en específico. PUT reemplaza todas las representaciones actuales del recurso 
+            meta con la carga solicitada, y el método HEAD busca a una respuesta idéntica a solicitud del método GET, pero sin 
+            el response body. El propósito del método DETELE es borrar un recurso en específico; y el método PATCH sirve para aplicar 
+            modificaciones parciales a un recurso.</p>
+
+        <li class="question">¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario 
+            y contraseña en algún sitio? ¿Por qué?</li><br>
+        <p class="answer">Para enviar un formulario HTML, se debe utilizar el método POST ya que este método envía datos al servidor. 
+            También, en POST, no hay un límite de cantidad de información a enviar, y la información proporcionada no es visible, por 
+            lo tanto, hasta se pueden enviar información sensible.</p>
+        
+        <li class="question">¿Qué métodos HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</li><br>
+        <p class="answer">GET porque este método recupera información desde el navegador utilizando el URL</p>
+    
+        <li class="question">Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</li><br>
+        <p class="answer">Significa que la solicitud ha tenido éxito. Puede haber variaciones de significado dependiendo del método HTTP, 
+            sin embargo, en general, significa que obtuvo respuestas satisfactorias. </p>
+    
+        <li class="question">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio 
+            y se encontró con un error de 404? ¿Por qué?</li><br>
+        <p class="answer">Este error puede depender de la situación. No es responsabilidad del desarrollador corregir el sitio web si el 
+            recurso no ha sido encontrado temporalmente ya que este error ocurre porque “el servidor no pudo encontrar el contenido solicitado” 
+            (mdn, n.d.). Pero, si el error es permanente porque el recurso que se está solicitando fue eliminado, el desarrollador sí debe de 
+            revisar qué es lo que pasó y encontrar una solución para que el servidor pueda encontrar el contenido como debería de.</p>
+        
+        <li class="question">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y 
+            se encontró con un error 500? ¿Por qué?</li><br>
+        <p class="answer">Con el error 500, sí es la responsabilidad del desarrollador corregir el sitio web, ya que este error significa que 
+            “el servidor ha encontrado una situación que no sabe cómo manejarla” (mdn, n.d.). No es un error por el navegador, computadora o 
+            la conexión de internet del usuario; sino, algo falló con el servidor.</p>
+
+        <li class="question">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de 
+            HTML 4 que en HTML5 estén desaprobados.</li><br>
+        <p class="answer">“Los tags y atributos desaprobados son partes del estándar HTML cuyo uso ya no es recomendado. Esto sucede dado 
+            que el estándar es actualizado de vez en cuando y algunas tags o características del lenguaje son agregadas, removidas o desaprobadas” 
+            (TODO HTML, n.d.). Algunos elementos de HTML 4 que en HTML5 estén desaprobados son: basefont, frame, acronym, y varios otros.</p>
+        
+        <li class="question">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li><br>
+        <p class="answer">La compatibilidad porque HTML5 y la mayoría de sus funciones son compatibles con todos los navegadores modernos, 
+            mientras que los sitios web escritos en los antiguos estándares HTML 4 frecuentemente se rompen en los navegadores modernos. 
+            También, el soporte multimedia ya que en HTML5, los elementos como el audio, video, gráficos vectoriales, animaciones y juegos 
+            son directamente compatibles sin tener que exponernos a posibles exploits. El lenguaje HTML 4 se basa en gran medida en el estándar 
+            SGML (Standard Generalized Markup Language), cuando HTML5 ya no se ajusta a ese estándar y analiza con sus propias reglas. Y 
+            obviamente, como es una versión más adelante, HTML5 tiene mejor rendimiento y soporte móvil.</p>
+
+        <li class="question">¿Qué componentes de estructura y estilo tiene una tabla?</li><br>
+        <p class="answer">Los componentes de estructura y estilo que tiene una tabla son: caption, lo cual provee un título para la tabla, 
+            colgroup, para agrupar columnas temáticamente, col para aplicar atributos comunes y estilos a una o más columnas, tbody, 
+            para representar a un cuerpo de la tabla, thead, la sección de encabezado de la tabla, tfoot, la sección de pie de la tabla, 
+            tr, lo cual representa una fila, td, una celda regular, y th, para representar a una celda de encabezado.</p>
+        
+        <li class="question">¿Cuáles son los principales controles de una forma HTML5?</li><br>
+        <p class="answer">Los principales controles de una forma HTML5 son text, button, checkbox, file, image, password, y sumbit.</p>
+
+        <li class="question">¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para 
+            descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</li>
+        <p class="answer">Estoy utilizando Chrome 110 con Windows 10, y este navegador que utilizo ganó 476 puntos sobre 555 puntos.</p>
+
+        <p><strong>Sobre el ciclo de vida y desarrollo de los sistemas de información:</strong></p>
+        
+        <li class="question">¿Cuál es el ciclo de vida de los sistemas de información?</li><br>
+        <p class="answer">El ciclo de vida de los sistemas de información consiste en: planificación, análisis, diseño, implementación, 
+            pruebas, instalación o despliegue, y por lo final, uso y mantenimiento. Con estos pasos, podemos comprender el problema, 
+            plantear una posible solución, considerando soluciones alternativas, llevar a cabo la solución planteada y comprobar que el 
+            resultado obtenido es correcto (Berzel, n.d.).</p>
+
+        <li class="question">¿Cuál es el ciclo de desarrollo de sistemas de información?</li><br>
+        <p class="answer">El ciclo de desarrollo de sistemas de información es: identificación de problemas, oportunidades y objetivos; 
+            determinación de los requerimientos de información; análisis de las necesidades del sistema; diseño del sistema recomendado; 
+            diseño y documentación del software; pruebas y mantenimiento del sistema; y pruebas y mantenimiento del sistema.</p>
+    </section>
+</body>
+<footer>
+    <p>Visual Studio Code</p>
+</footer>
+</html>
