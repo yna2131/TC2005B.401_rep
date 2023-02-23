@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>TC2005. Lab04</title>
+    </head>
+    <body>
+        <h1>Laboratorio 4: Fundamentos de JavaScript</h1>
+        <ul>
+            <li><a class="active">Inicio</a></li>
+            <li><a>Q&A</a></li>
+        </ul>
+            <h2>Problemas</h2>
+            <table id="incisos">
+                <tr>
+                    <th>Entrada / Función</th>
+                    <th>Parámetros</th>
+                    <th>Salida / Regresa</th>
+                </tr>
+                <tr>
+                    <td>Un número pedido con un prompt</td>
+                    <td>ND</td>
+                    <td>Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza <i>document.write</i> para producir la salida</td>
+                </tr>
+                <tr>
+                    <td>Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria</td>
+                    <td>ND</td>
+                    <td>La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta</td>
+                </tr>
+                <tr>
+                    <td>Contador</td>
+                    <td>Un arreglo de números</td>
+                    <td>La cantidad de números negativos en el arreglo, la cantidad de 0's, y la cantidad de valores mayores a 0 en el arreglo</td>
+                </tr>
+                <tr>
+                    <td>Promedios</td>
+                    <td>Un arreglo de arreglos de números</td>
+                    <td>Un arreglo con los promedios de cada uno de los renglones de la matriz</td>
+                </tr>
+                <tr>
+                    <td>Inverso</td>
+                    <td>Un número</td>
+                    <td>El número con sus dígitos en orden inverso</td>
+                </tr>
+            </table>
+        <section>
+        <h2>01</h2>
+            <button onclick="inputTable();">Click!</button>
+            <div id = "table1"></div>
+        <h2>02</h2>
+            <button onclick="sumRandNum();">Click!</button>
+            <p id = "result"></p>
+        <h2>03</h2>
+            <button onclick="contador();">Click!</button>
+            <p id = "arreglo"></p>
+        <h2>04</h2>
+            <button onclick="promedios();">Click!</button>
+            <p id = "promfinal"></p>
+        <h2>05</h2>
+            <button onclick="inverso();">Click!</button>
+            <p id = "inverted"></p>
+        <h2>06</h2>
+            <button onclick="myProblem();">Click!</button>
+            <p id = "sumsum"></p>
+        </section>
+        
+        <section>
+            <h2>Preguntas a Responder</h2>
+                <li class="question">¿Qué diferencias y semejanzas hay entre Java y Javascript?</li><br>
+                <p class="answer">JavaScript (JS) es un lenguaje de programación (lenguaje de scripting) y se utiliza para crear páginas web interactivas.
+                     Puede insertar texto dinámico en el HTML. JavaScript también se conoce como lenguaje del navegador, y JavaScript (JS) no es similar 
+                     o relacionado con Java. Ambos lenguajes tienen una sintaxis similar a la C y son ampliamente utilizados en aplicaciones web de lado 
+                     del cliente y de lado del servidor. Sin embargo, tienen más diferencias que semejanzas. Java es un lenguaje fuertemente tipado y las 
+                     variables deben declararse primero para ser utilizados en el programa. En Java, el tipo de variables es comprobado en el momento de 
+                     la compilación. Por otro lado, JavaScript es un lenguaje encriptado y tiene una sintaxis y reglas más relajadas. No solo esto, Java 
+                     es un lenguaje de programación orientado a objetos, mientras que JavaScript es un lenguaje de scripting basado en objetos. También 
+                     existen muchas más diferencias que estos mencionados.</p>
+
+                <li class="question">¿Qué métodos tiene el objeto Date?</li><br>
+                <p class="answer">getFullYear() <br> getMonth() <br> getDate() <br> getDay() <br> getHours() <br> getMinutes() <br> getSeconds() 
+                    <br> getMilliseconds() <br> getTime()</p>
+
+                <li class="question">¿Qué métodos tienen los arreglos?</li><br>
+                <p class="answer">toString() <br> join() <br> pop() <br> push() <br> shift() <br> unshift()</p>
+
+                <li class="question">¿Cómo se declara una variable con alcance local dentro de una función?</li><br>
+                <p class="answer">Se crea al comienzo de la función y se destruye al salir de la función al que pertenece.</p>
+
+                <li class="question">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</li><br>
+                <p class="answer">El acceso se refiere exclusivamente a la variable dentro de la función más interna. Es decir, el nombre de la variable 
+                    global es válido a menos que una función interna lo vuela a definir.</p>
+        </section>
+
+        <section>
+            <h2>Referencias</h2>
+            <li>vivekkothari. (n.d.). <i>Difference between Java and JavaScript</i>. GeeksforGeeks. Recuperado de https://www.geeksforgeeks.org/difference-between-java-and-javascript/</li>
+            <li>w3schools. (n.d.). <i>JavaScript Get Date Methods</i>. Recuperado de https://www.w3schools.com/js/js_date_methods.asp</li>
+            <li>w3schools. (n.d.). <i>JavaScript Array Reference</i>. Recuperado de https://www.w3schools.com/jsref/jsref_obj_array.asp</li>
+        </section>        
+        <script src="js.js"></script>
+    </body>
+    <br>
+    <footer>
+        <p>Created with: <strong>Visual Studio Code</strong> </p>
+        <p>Yuna Chung A01709043</p>
+    </footer>
+</html>
