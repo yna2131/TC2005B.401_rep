@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>TC2005B. Lab06</title>
+    </head>
+    <body>
+        <h1>Laboratorio 6: Programación orientada a eventos</h1>
+        <script src="js.js"></script>
+    <body>
+        <table>
+            <tr>
+                <td>*</td>
+                <td>ID:</td>
+                <td><input type = "text" name = "userId" id = "id"></td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Password:</td>
+                <td><input type = "password" name = "userPW" id = "pw" onchange = "check_pw()"></td> 
+                <!-- onchange 속성은, 키보드로 입력 후 변화가 생겼을 때 발생하는 이벤트를 의미하고, check_pw()라는 함수를 실행시키도록 하였다.-->
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Verify Password:</td>
+                <td><input type = "password" name = "userPW2" id = "pw2" onchange="check_pw()">&nbsp;<span id = "check"></span></td>
+            </tr>
+        </table>    
+        <input type="button" value="Click!" onclick="check_pw()">
+        
+        <section>
+            <h2>Preguntas a Responder</h2>
+            <li class="question">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?</li><br>
+            <p class="answer">El uso de !important en un CSS no es recomendable considerando algunos conflictos que puede traer, pero dependiendo de la situación 
+                que el desarrollador enfrente. !important anula todas otras declaraciones y hace que el código CSS sea más difícil de ser mantenido y depurado. 
+                Una vez que se declara !important, no hay manera de ignorar este comando, y la única solución que puede anular esto es utilizar otro !important, 
+                y es un ciclo infinito. </p>
+        </section>
+        <section>
+            <h2>Preguntas a Responder</h2>
+                <li class="question">¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al seridor?</li><br>
+                <p class="answer">De esta forma, si el usuario ha cometido algún error al rellenar el formulario, se le puede notificar de forma instantánea, sin necesidad de esperar la respuesta del servidor. Notificar los errores de forma inmediata mediante JavaScript mejora la satisfacción del usuario con la aplicación y ayuda a reducir la carga de procesamiento en el servidor.</p>
+
+                <li class="question">¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</li><br>
+                <p class="answer">Con SQL injection, deshabilitando JavaScript del navegador como una vez dentro, esto puede controlar la base de datos del sitio web y secuestrar la información de los usuarios.</p>
+
+                <li class="question">Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</li><br>
+                <p class="answer">Ya que es necesario para mejorar la experiencia del usuario, sin embargo, esta no debe ser la única validación que se haga. Debe haber validaciones de seguridad tanto en el Front-end como en el Back-end para prevenir riesgos de seguridad.</p>
+        </section>
+
+        <section>
+            <h2>Referencias</h2>
+            <li>씨엔아이소프트. (2018). <i>패스워드, 확인패스워드가 맞는지 체크</i>. 씨엔아이스토리. Retrieved from: https://cnisoft.tistory.com/118</li>
+            <li>심드류카네기. (2019). <i>[WEB] 2. 회원가입 비밀번호 조건 및 일치 여부 확인 1</i>. 영암사는 승경이네. Retrieved from: https://tlatmsrud.tistory.com/3</li>
+            <li>피로물든딸기. (2022). <i>html input 태그에서 비밀번호 표시 여부 설정하기</i>. 피로물든딸기의 라이브러리. Retrieved from: https://bloodstrawberry.tistory.com/612#:~:text=%EA%B5%AC%EA%B8%80%20%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%97%90%20%EB%B3%B4%EB%A9%B4%20%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8,%EC%9E%88%EB%8A%94%20check%20%EB%B2%84%ED%8A%BC%EC%9D%B4%20%EC%9E%88%EB%8B%A4.&text=type%EC%9D%B4%20password%20%E2%86%92%20text,%EB%B3%80%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%84%20%EC%95%8C%20%EC%88%98%20%EC%9E%88%EB%8B%A4.</li>
+            <li>Caballero, A. (s. f.). <i>Evadir Restricciones de Datos Enviados por el Usuario en Formularios HTML</i>. ReYDeS. Recuperado de https://www.reydes.com/d/?q=Evadir_Restricciones_de_Datos_Enviados_por_el_Usuario_en_Formularios_HTML</li>
+            <li>uniwebsidad. (s. f.). 7.3. <i>Validación (Introducción a JavaScript)</i>. Recuperado desde https://uniwebsidad.com/libros/javascript/capitulo-7/validacion</li>
+        </section>
+    </body>
+    <footer>
+        <p>Created with: <strong>Visual Studio Code</strong> </p>
+        <p>Yuna Chung A01709043</p>
+    </footer>
+</html>
