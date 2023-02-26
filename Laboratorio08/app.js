@@ -35,7 +35,7 @@ promarrg();
 // Una función que reciba un string y escriba el string en un archivo de texto. Apóyate del módulo fs.
 const recibstring = () => {
     const filesystem = require('fs');
-    filesystem.writeFileSync("texto.txt", "Laboratorio 08");
+    filesystem.writeFileSync("texto.txt", "Yuna Chung & Olimpia Garcia");
 };
 
 recibstring();
