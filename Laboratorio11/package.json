@@ -1,0 +1,11 @@
+{
+  "name": "laboratorio11",
+  "version": "1.0.0",
+  "description": "Laboratorio 11",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Yuna Chung & Olimpia Garcia",
+  "license": "MIT"
+}
