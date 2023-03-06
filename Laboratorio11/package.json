@@ -1,11 +1,23 @@
 {
-  "name": "laboratorio11",
+  "name": "lab11",
   "version": "1.0.0",
-  "description": "Laboratorio 11",
+  "description": "lab11",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Yuna Chung & Olimpia Garcia",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yna2131/TC2005B.401_rep/tree/main/Laboratorio11"
+  },
+  "author": "Yuna Chung",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
 }
