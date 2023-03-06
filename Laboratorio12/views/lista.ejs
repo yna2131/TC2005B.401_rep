@@ -1,0 +1,51 @@
+<%- include ("includes/head.ejs") %>
+
+<!-- <main class="container"> -->
+
+      
+  <% if(hot_cakes.length > 0) { %>
+    <p> pasa el if </p>
+      <div class="columns is-multiline">
+        <% for (let hot_cake of hot_cakes) { %>
+          <div class="column is-3">
+              <div class="card">
+                  <div class="card-image">
+                      <figure class="image is-4by3">
+                          <img src="<%= hot_cake.imagen %>" alt="Placeholder image">
+                      </figure>
+                  </div>
+                  <div class="card-content">
+                      <div class="media">
+                          <div class="media-left">
+                          <figure class="image is-48x48">
+                              <img src="<%= hot_cake.imagen %>" alt="Placeholder image">
+                          </figure>
+                          </div>
+                          <div class="media-content">
+                          <p class="title is-4"><%= hot_cake.nombre %></p>
+                          <p class="subtitle is-6"><%= hot_cake.handle %> $<%= hot_cake.precio %> </p>
+                          </div>
+                      </div>
+                  
+                      <div class="content">
+                          <%= hot_cake.descripcion %> 
+                          <br>
+                          Ingredientes:
+                          <br>
+                          <%= hot_cake.ingredientes %> 
+                      </div>
+                  </div>
+              </div>
+            </div>
+          <% 
+        } 
+        %>
+      </div>
+    <% 
+    } else 
+      { %>
+        <h1>404 No hay hot cakes >:( no paso el if </h1> 
+        <% }%>   
+
+  <%- include('includes/foot.ejs') %>
+
