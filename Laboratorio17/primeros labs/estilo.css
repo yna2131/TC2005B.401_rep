@@ -1,0 +1,15 @@
+body {
+    color: darkslategray;
+}
+
+.ingrediente {
+    color: deeppink;
+}
+
+.ingrediente:hover {
+    color: hotpink;
+}
+
+#harina {
+    color: fuchsia;
+}
