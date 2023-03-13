@@ -1,0 +1,14 @@
+Agenda: 
+
+--> Repaso de SQl (Consultas con funciones agregadas)
+    - Ejercicio de Consultas
+
+--> Metodología para traducir casos de uso a casos de pruebas
+    1) Completo el diagrama de casos de uso
+    2) Describir cada caso de uso (Formato) --> Árbol de decisiones
+    3) Identificar y nombrar los escenarios
+    4) Generar tabla con cada caso de prueba (Al menos una por cada escenario). 
+        - Valores válido/inválido/aplica/no aplica
+    5) Generar tabla con valores: poner cuáles explícitamente y qué resultado esperamos
+
+--> Avance de Proyecto (Prueba de concepto)
