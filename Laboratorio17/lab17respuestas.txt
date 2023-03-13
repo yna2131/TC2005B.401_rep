@@ -1,0 +1,31 @@
+¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?
+
+Incrementa la seguridad, ayuda a dar mantenimiento, hace que sea más facil de leer el codigo y por lo tanto es más limpio, ayudando a debuggear mas facilmente. 
+
+¿Qué es SQL injection y cómo se puede prevenir?
+
+SQL injection:
+
+Es una vulnerabilidad de seguridad en la web que la expone a ataques. Permite a un hacker visualizar datos que no debería conocer o a los que no debería tener acceso.
+
+Existen tres tipos de inyección SQL:
+
+Entrada no saneada - se produce cuando una aplicación no filtra o desinfecta su entrada y la utiliza directamente en una consulta sin realizar la validación o codificación.
+
+Inyección fuera de banda - se produce cuando se envían datos maliciosos a una aplicación a través de canales distintos de los especificados para la entrada interactiva del usuario
+
+Inyección SQL ciega - se produce cuando un atacante no puede ver lo que está sucediendo entre bastidores porque el sistema de destino no devuelve mensajes de error cuando se proporcionan valores no válidos como entrada.
+
+Prevención:
+
+Enfoque de confianza cero: la organización asume que todos los usuarios, incluidos los administradores, socios externos y proveedores, no son de confianza y son atacantes potenciales. Y aplica controles estrictos al acceso y uso de la información
+
+Limitar privilegios:  lo mejor es asignar sólo los privilegios mínimos necesarios para que la cuenta funcione correctamente
+
+Utilizar procedimientos almacenados: utiliza funciones predefinidas que pueden llamarse desde el código de la aplicación, utilizando parámetros pasados por el usuario
+
+Utilizar consultas parametrizadas: se deben usar consultas que utilicen variables en lugar de constantes en la cadena de consulta.
+
+Seguridad multicapa: Debes aplicar múltiples capas de defensa contra este tipo de ataques para evitar que esto ocurra. Esto incluye la configuración de cortafuegos y la implantación de mecanismos de autenticación fuerte para todos los usuarios. 
+
+Rudra, A. (2023, 17 enero). Configuración de cookies y privacidad. PowerDMARC. https://powerdmarc.com/es/sql-injection-prevention/
