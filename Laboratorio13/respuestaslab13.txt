@@ -1,0 +1,9 @@
+
+¿Qué beneficios encuentras en el estilo MVC?
+
+En el modelo Vista controlador lo que buscamos hacer es separar la vista del usuario de la lógica de la página, el controlador se refiere a la parte de las rutas de la página. 
+Esto con el objetivo de organizar mejor y tener archivos más chicos
+
+¿Encuentras alguna desventaja en el estilo arquitectónico MVC?
+
+Puedes tener problemas de enrutamiento si no tienes bien documentado el nombre de tus carpetas, además de que es posible que termines con muchos archivos, lo cual haga dificil el seguimiento de las rutas.
