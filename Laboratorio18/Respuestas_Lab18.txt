@@ -1,0 +1,6 @@
+¿Qué otras formas de autentificación existen?
+   1. Autentificación QR
+   2. Doble Factor de Autentificación
+   3. OTP SMS
+   4. Biometría
+   5. Certificado Digital

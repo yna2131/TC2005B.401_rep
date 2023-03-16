@@ -1,0 +1,32 @@
+<%- include('includes/head.ejs') %>
+
+<h1 class="title">Registrar hot cake</h1>
+
+<br><br>
+
+<form action="/hot_cakes/nuevo" method="POST">
+
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+
+    <label for="nombre">Nombre:</label>
+    <input required name="nombre" id="nombre" class="input is-rounded" type="text" placeholder="Belgas">
+
+    <label for="descripcion">Descripcion:</label>
+    <input name="descripcion" id="descripcion" class="input is-rounded" type="text" placeholder="Deliciosos hot cakes">
+
+    <label for="handle">Handle:</label>
+    <input name="handle" id="handle" class="input is-rounded" type="text" placeholder="@hot_cake">
+
+    <label for="ingredientes">Ingredientes:</label>
+    <input name="ingredientes" id="ingredientes" class="input is-rounded" type="text" placeholder="Mantequilla, harina, huevo y leche">
+
+    <label for="precio">Precio:</label>
+    <input name="precio" id="precio" class="input is-rounded" type="number" value="150">
+
+    <br><br>
+
+    <input class="button is-info is-rounded" type="submit" value="Registrar">
+
+</form>
+
+<%- include('includes/foot.ejs') %>
