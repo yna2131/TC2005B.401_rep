@@ -1,0 +1,29 @@
+<%- include('includes/head.ejs') %>
+
+<h1 class="title">Entrar</h1>
+
+<% if(mensaje) { %>
+    <div class="notification is-link is-light">
+        <%= mensaje %>
+    </div>
+<% } %>
+
+<br><br>
+
+<form action="/users/login" method="POST">
+
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+
+    <label for="username">Nombre de usuario:</label>
+    <input name="username" id="username" class="input is-rounded" type="text" placeholder="lalo">
+
+    <label for="password">Password:</label>
+    <input name="password" id="password" class="input is-rounded" type="password" >
+
+    <br><br>
+
+    <input class="button is-info is-rounded" type="submit" value="Entrar">
+
+</form>
+
+<%- include('includes/foot.ejs') %>
