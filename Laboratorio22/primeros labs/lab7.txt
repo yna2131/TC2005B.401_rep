@@ -1,0 +1,4 @@
+Este archivo es para los ejemplos del lab 7. Aquí causamos problemas.
+Este archivo es para los ejemplos del lab 7. Los conflictos a veces son severos.
+
+Estos cambios se van a realizar con un pull request

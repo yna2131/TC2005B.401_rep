@@ -1,0 +1,132 @@
+<%- include('includes/head.ejs') %>
+
+<h1 class="title">Menú</h1>
+
+<% if(privilegios.indexOf('crear_hotcakes') >= 0) { %>
+    <a href="/hot_cakes/nuevo" class="button is-link is-rounded">Registrar</a>
+<% } %>
+
+<br><br>
+<label for="buscar">Buscar:</label>
+<input name="buscar" id="buscar" class="input is-info" type="text">
+<br><br>
+
+<div id="resultados">
+<% if (hot_cakes.length > 0) { %>
+    <div class="columns is-multiline">
+        <% for (let hot_cake of hot_cakes) { %>
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="/uploads/<%= hot_cake.imagen %>" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/uploads/<%= hot_cake.imagen %>" alt="Placeholder image">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                            <p class="title is-4"><%= hot_cake.nombre %></p>
+                            <p class="subtitle is-6"><%= hot_cake.handle %> $<%= hot_cake.precio %> </p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            <%= hot_cake.descripcion %> 
+                            <br>
+                            Ingredientes:
+                            <br>
+                            <%= hot_cake.ingredientes %> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+<% } else { %>
+    <h1>No hay hot cakes >:( </h1>
+<% } %>   
+</div>
+
+<br><br>
+
+<% if (ultimo_hot_cake != '') { %>
+    <div class="notification is-link is-light">
+        El último hot cake registrado fue: <%= ultimo_hot_cake %>
+    </div>
+<% } %>
+
+<% if(privilegios.indexOf('crear_hotcakes') >= 0) { %>
+    <a href="/hot_cakes/nuevo" class="button is-link is-rounded">Registrar</a>
+<% } %>
+
+<script>
+    document.getElementById("buscar").onkeyup = () => {
+        
+        const valor_busqueda = document.getElementById("buscar").value;
+        //función que manda la petición asíncrona
+        fetch('/hot_cakes/buscar/' + valor_busqueda, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).then(result => {
+            return result.json(); //Regresa otra promesa
+        }).then(data => {
+            //Modificamos el DOM de nuestra página de acuerdo a los datos de la segunda promesa
+            console.log(data);
+
+            let resultados = "";
+
+            if (data.hot_cakes.length > 0) { 
+                resultados += `<div class="columns is-multiline">`;
+                    for (let hot_cake of data.hot_cakes) { 
+                        resultados += `<div class="column is-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="/uploads/${hot_cake.imagen}" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/uploads/${hot_cake.imagen}" alt="Placeholder image">
+                                        </figure>
+                                        </div>
+                                        <div class="media-content">
+                                        <p class="title is-4">${hot_cake.nombre}</p>
+                                        <p class="subtitle is-6">${hot_cake.handle} $${hot_cake.precio} </p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="content">
+                                        ${hot_cake.descripcion}
+                                        <br>
+                                        Ingredientes:
+                                        <br>
+                                        ${hot_cake.ingredientes}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+                    } 
+                resultados += `</div>`;
+            } else { 
+                resultados += `<h1>No hay hot cakes >:( </h1>`;
+            }    
+
+            document.getElementById("resultados").innerHTML = resultados;
+
+        }).catch(error => {
+            console.log(error);
+        });
+    }
+</script>
+
+<%- include('includes/foot.ejs') %>
