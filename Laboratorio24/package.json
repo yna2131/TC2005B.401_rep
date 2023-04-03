@@ -1,0 +1,39 @@
+{
+  "name": "hot_cakes",
+  "version": "1.0.0",
+  "description": "Ejemplos del curso TC2005B Construcción de software y toma de decisiones, salón 2002, febrero-junior 2023",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ejuarez@bitbucket.org/ejuarez/hot_cakes.git"
+  },
+  "keywords": [
+    "node",
+    "tec",
+    "hot",
+    "cakes"
+  ],
+  "author": "Eduardo Juárez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://bitbucket.org/ejuarez/hot_cakes/issues"
+  },
+  "homepage": "https://bitbucket.org/ejuarez/hot_cakes#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.0"
+  }
+}
