@@ -1,0 +1,14 @@
+{
+  "name": "laboratorio26",
+  "version": "1.0.0",
+  "description": "Laboratorio 26",
+  "main": "js.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Yuna Chung",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
+}
